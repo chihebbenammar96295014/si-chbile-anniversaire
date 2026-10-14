@@ -11,7 +11,6 @@ import {
   BookMarked,
   BookOpen,
   ChevronDown,
-  HeartHandshake,
   Library,
   Sparkles,
   Star,
@@ -468,11 +467,6 @@ function StoryTimeline() {
       text: 'On travaille ensemble chaque jour.',
     },
     {
-      icon: HeartHandshake,
-      title: 'Le duo',
-      text: 'Deux personnes, une même passion.',
-    },
-    {
       icon: Sparkles,
       title: 'L’anniversaire',
       text: 'Aujourd’hui, on fête Si Chbile.',
@@ -787,9 +781,7 @@ function CelebrationBurst() {
 
 function QuoteMarquee() {
   const quotes = [
-    '« Lire, c’est voyager sans bouger. »',
     '« Travailler ensemble, c’est écrire la même histoire. »',
-    '« La librairie : là où les histoires trouvent une maison. »',
     '« Joyeux anniversaire, Si Chbile ! »',
   ]
   const loop = [...quotes, ...quotes]
@@ -854,8 +846,7 @@ function Footer() {
           <span className="text-[#f0e6c8]">Si Chbile</span>
         </motion.p>
         <p className="text-[#e8f2ee]/70 mb-8 max-w-md mx-auto text-sm md:text-base leading-relaxed">
-          Joyeux anniversaire — que les pages continuent de se tourner, ensemble
-          au travail.
+          Joyeux anniversaire.
         </p>
         <motion.div
           animate={{ rotate: [0, -10, 10, 0], scale: [1, 1.2, 1] }}
